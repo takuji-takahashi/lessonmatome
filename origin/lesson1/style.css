@@ -1,0 +1,52 @@
+ body {
+     background: #efefef;
+ }
+
+
+ #omikuji {
+     width: 600px;
+     height: 100vh;
+     background: #f5deb3;
+     border: 5px groove #c71585;
+     margin: auto;
+ }
+
+ #omikuji>h1 {
+     font-family: serif;
+     font-size: 4rem;
+     text-align: center;
+     color: indigo;
+ }
+
+
+ #omikuji>#output {
+     font-size: 40px;
+     font-weight: bold;
+     text-align: center;
+     color: #fff;
+     width: 600px;
+     height: 200px;
+     background: #ff0000;
+     line-height: 200px;
+ }
+
+ #omikuji>p {
+     font-size: 20px;
+     font-family: serif;
+     text-align: center;
+     color: #000000;
+     margin-top: 20px
+ }
+
+ #omikuji>#btn {
+     width: 220px;
+     height: 80px;
+     background: #6b8e23;
+     border-radius: 10%;
+     font-size: 30px;
+     font-weight: bold;
+     color: lavender;
+     margin: 20px 200px;
+     cursor: pointer;
+
+ }
