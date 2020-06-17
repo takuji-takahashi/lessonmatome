@@ -1,5 +1,6 @@
 'use strict'
 
+
 let start = document.getElementById('start');
 let stop = document.getElementById('stop');
 let result = document.getElementById('result');
