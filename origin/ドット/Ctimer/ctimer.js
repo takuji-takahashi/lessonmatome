@@ -9,11 +9,13 @@ const start = document.getElementById('start');
 
 // timeLeft = TimeToCountDown-elapsedTime
 
+//定義
 let startTime, timeLeft, elapsedTime;
 let timeToCountDown = 0;
 let timerId;
 let isRunning = false;
 
+//アップデート
 function updateTimer(t) {
     let d = new Date(t);
     let m = d.getMinutes();
@@ -28,6 +30,7 @@ function updateTimer(t) {
     document.title = timerString;
 }
 
+//カウントダウン
 function countDown() {
     timerId = setTimeout(function () {
         timeLeft = timeToCountDown - (Date.now() - startTime);
@@ -45,6 +48,7 @@ function countDown() {
     }, 10);
 }
 
+//startClick
 start.addEventListener('click', function () {
     if (isRunning === false) {
         isRunning = true;
@@ -59,6 +63,8 @@ start.addEventListener('click', function () {
     }
 
 });
+
+//minClick
 min.addEventListener('click', function () {
     if (isRunning === true) {
         return;
@@ -69,6 +75,8 @@ min.addEventListener('click', function () {
     }
     updateTimer(timeToCountDown);
 });
+
+//secClick
 sec.addEventListener('click', function () {
     if (isRunning === true) {
         return;
@@ -79,6 +87,8 @@ sec.addEventListener('click', function () {
     }
     updateTimer(timeToCountDown);
 });
+
+//resetClick
 reset.addEventListener('click', function () {
     timeToCountDown = 0;
     updateTimer(timeToCountDown);
